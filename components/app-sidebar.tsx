@@ -50,12 +50,13 @@ interface AppSidebarProps extends React.ComponentProps<typeof Sidebar> {
 
 export function AppSidebar({ activeItem, onItemClick, ...props }: AppSidebarProps) {
   return (
-    <Sidebar {...props} className="bg-teal-800 border-r-0">
+    <Sidebar {...props} className="bg-sidebar-gradient border-r-0 text-white">
       <SidebarHeader className="p-4">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-            <Settings className="w-4 h-4 text-teal-800" />
-          </div>
+        <div className="w-8 h-8 rounded-full overflow-hidden">
+  <img src="/images/image.png" alt="Logo" className="w-full h-full object-cover" />
+</div>
+
           <span className="text-white font-semibold text-lg">SteriBOT</span>
         </div>
       </SidebarHeader>
@@ -68,8 +69,11 @@ export function AppSidebar({ activeItem, onItemClick, ...props }: AppSidebarProp
                   <SidebarMenuButton
                     asChild
                     isActive={activeItem === item.url}
-                    className="text-white hover:bg-teal-700 data-[active=true]:bg-teal-700"
-                    onClick={() => onItemClick?.(item.url)}
+className="text-white data-[active=true]:bg-[#0C6980]"
+style={{
+  '--hover-bg': ' #0C6980'
+}}
+                  onClick={() => onItemClick?.(item.url)}
                   >
                     <button className="w-full flex items-center gap-3 p-3">
                       <item.icon className="w-5 h-5" />

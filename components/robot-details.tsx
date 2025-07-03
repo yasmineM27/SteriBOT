@@ -84,7 +84,7 @@ export function RobotDetails() {
             </Button>
           </div>
 
-          <Card className="bg-teal-800 text-white">
+          <Card className=" text-white" style={{ background: 'linear-gradient(90deg, #0A3F4C, #0C6980)' }}>
             <CardContent className="p-6">
               <div className="grid grid-cols-8 gap-4">
                 <div className="text-center">
@@ -169,7 +169,7 @@ export function RobotDetails() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Left Column - Robot Image and Basic Info */}
           <div className="space-y-6">
-            <Card className="bg-teal-800 text-white">
+            <Card className=" text-white" style={{ background: 'linear-gradient(90deg, #0A3F4C, #0C6980)' }}>
               <CardContent className="p-6 text-center">
                 <div className="w-32 h-32 mx-auto mb-4 bg-teal-700 rounded-lg flex items-center justify-center">
                   <Bot className="w-16 h-16 text-teal-200" />

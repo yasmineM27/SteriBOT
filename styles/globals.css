@@ -51,6 +51,7 @@ body {
   }
   .dark {
     --primary-gradient: linear-gradient(90deg, #0A3F4C, #0C6980);
+
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
     --card: 0 0% 3.9%;
@@ -92,5 +93,11 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .bg-sidebar-gradient {
+    background: linear-gradient(90deg, #0A3F4C, #0C6980);
   }
 }

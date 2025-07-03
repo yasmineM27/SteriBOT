@@ -27,7 +27,8 @@ export function Dashboard() {
 
       {/* Stats Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <Card className="bg-gradient-to-r from-teal-600 to-teal-700 text-white">
+        <Card className="text-white"
+  style={{ background: 'linear-gradient(to left, #0A3F4C, #0C6980)' }}>
           <CardContent className="p-4">
             <div className="flex items-center justify-between">
               <div>
@@ -39,17 +40,21 @@ export function Dashboard() {
           </CardContent>
         </Card>
 
-        <Card className="bg-gradient-to-r from-blue-600 to-blue-700 text-white">
-          <CardContent className="p-4">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-blue-100 text-sm">Today's Users</p>
-                <p className="text-2xl font-bold">70</p>
-              </div>
-              <Users className="w-8 h-8 text-blue-200" />
-            </div>
-          </CardContent>
-        </Card>
+        <Card
+  className="text-white"
+  style={{ background: 'linear-gradient(to right, #0A3F4C, #0C6980)' }}
+>
+  <CardContent className="p-4">
+    <div className="flex items-center justify-between">
+      <div>
+        <p className="text-blue-100 text-sm">Today's Users</p>
+        <p className="text-2xl font-bold">70</p>
+      </div>
+      <Users className="w-8 h-8 text-teal-200" />
+    </div>
+  </CardContent>
+</Card>
+
       </div>
 
       {/* Charts Row */}

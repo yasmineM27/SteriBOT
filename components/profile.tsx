@@ -21,7 +21,7 @@ export function Profile() {
         {/* Profile Info */}
         <div className="space-y-6">
           {/* Main Profile Card */}
-          <Card className="bg-teal-800 text-white">
+          <Card className=" text-white" style={{ background: 'linear-gradient(90deg, #0A3F4C, #0C6980)' }}>
             <CardContent className="p-6">
               <div className="flex flex-col items-center text-center">
                 <Avatar className="w-24 h-24 mb-4">
