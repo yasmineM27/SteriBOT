@@ -6,6 +6,9 @@ import { AppSidebar } from "@/components/app-sidebar"
 import { Dashboard } from "@/components/dashboard"
 import { Profile } from "@/components/profile"
 import { RobotDetails } from "@/components/robot-details"
+import { RobotsList } from "@/components/robots-list"
+import { SterilizationHistory } from "@/components/sterilization-history"
+import { ObstacleDetection } from "@/components/obstacle-detection"
 
 export default function Page() {
   const [activeView, setActiveView] = useState("/dashboard")
@@ -18,8 +21,17 @@ export default function Page() {
         return <Profile />
       case "/robot-details":
         return <RobotDetails />
-      default:
-        return <Dashboard />
+
+        case "/robots-list":
+          return <RobotsList />
+          case "/sterilization-history":
+        return <SterilizationHistory />
+        case "/obstacle-detection":
+          return <ObstacleDetection />
+
+          default:
+            return <Dashboard />
+
     }
   }
 

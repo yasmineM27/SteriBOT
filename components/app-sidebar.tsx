@@ -1,7 +1,7 @@
 "use client"
 
 import type * as React from "react"
-import { Home, Bot, List, BarChart3, User, Settings } from "lucide-react"
+import { Home, Bot, List, BarChart3, User, Settings,Activity,AlertTriangle } from "lucide-react"
 
 import {
   Sidebar,
@@ -35,6 +35,16 @@ const menuItems = [
     title: "Robots List",
     url: "/robots-list",
     icon: List,
+  },
+  {
+    title: "Sterilization History",
+    url: "/sterilization-history",
+    icon: Activity,
+  },
+  {
+    title: "Obstacle Detection",
+    url: "/obstacle-detection",
+    icon: AlertTriangle,
   },
   {
     title: "Profile",
